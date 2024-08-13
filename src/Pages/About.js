@@ -1,5 +1,13 @@
+import { useTheme } from "../themecontext";
+
 const About = () => {
-  return <div>About Page</div>;
+  const { Theme } = useTheme();
+  return (
+    <div className={`page ${Theme}`}>
+      <h1>About Page</h1>
+      <p>Fill the details to call back</p>
+    </div>
+  );
 };
 
 export default About;
